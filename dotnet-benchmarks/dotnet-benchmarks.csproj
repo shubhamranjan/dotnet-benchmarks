@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>
+      netcoreapp3.1;netcoreapp5.0</TargetFrameworks>
+    <RootNamespace>dotnet_benchmarks</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Results\**" />
+    <EmbeddedResource Remove="Results\**" />
+    <None Remove="Results\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.12.1" />
+  </ItemGroup>
+
+</Project>
